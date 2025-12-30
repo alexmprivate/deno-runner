@@ -1,0 +1,18 @@
+{
+  "tasks": {
+    "dev": "deno run -P --env-file=.env --watch src/main.ts"
+  },
+  "imports": {
+    "@hono/swagger-ui": "npm:@hono/swagger-ui@^0.5.3",
+    "@hono/zod-openapi": "npm:@hono/zod-openapi@^1.2.0",
+    "@std/assert": "jsr:@std/assert@1",
+    "hono": "npm:hono@^4.11.3"
+  },
+  "permissions": {
+    "default": {
+      "read": ["./public", ".env"],
+      "net": ["127.0.0.1:3000"],
+      "env": ["FOO", "BAR"]
+    }
+  }
+}
