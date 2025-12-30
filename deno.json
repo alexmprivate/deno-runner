@@ -14,5 +14,9 @@
       "net": ["127.0.0.1:3000"],
       "env": ["FOO", "BAR"]
     }
+  },
+  "deploy": {
+    "org": "alexmprivate",
+    "app": "huge-gecko-16"
   }
 }
